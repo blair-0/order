@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>welcome</title>
+</head>
+<body>
+	<form action="#" th:action="@{/type/add}" th:object="${type}" method="post">
+		ID：<input type="text" th:field="*{id}"> 
+		<br> 
+		类型：<input type="text" th:field="*{name}"> 
+		<input type="submit" value="提交">
+	</form>
+
+</body>
+</html>

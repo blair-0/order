@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>类型列表</h2>
+	<div>
+		<ul>
+			<li th:each="type:${types}"><span th:text="${type.id}"></span>-
+				<span th:text="${type.name}"></span></li>
+		</ul>
+	</div>
+</body>
+</html>
